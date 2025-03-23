@@ -62,6 +62,13 @@ const Index = () => {
     handleNext();
   };
 
+  // Function to handle view all expenses
+  const handleViewAllExpenses = () => {
+    console.log('View all expenses');
+    // Reset to first step for demo purposes
+    setCurrentStep(0);
+  };
+
   // Render the appropriate step
   const renderStep = () => {
     switch (currentStep) {
@@ -84,7 +91,7 @@ const Index = () => {
       case 3:
         return <ConfirmationScreen 
           expenseData={expenseData}
-          onViewAllExpenses={() => console.log('View all expenses')}
+          onViewAllExpenses={handleViewAllExpenses}
         />;
       default:
         return <ReceiptCapture onCaptureComplete={handleCaptureComplete} />;
@@ -92,8 +99,8 @@ const Index = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-start bg-gray-50 p-4">
-      <div className="w-full max-w-md mx-auto">
+    <div className="flex min-h-screen flex-col bg-gray-50">
+      <div className="w-full max-w-md mx-auto h-full flex flex-col">
         {renderStep()}
       </div>
     </div>
