@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, AlertTriangle, Save } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
-import type { ExpenseData } from '@/pages/Index';
+import type { ExpenseData } from '@/types/expense';
 
 interface PolicyCheckProps {
   expenseData: ExpenseData;

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,7 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { ChevronLeft, Edit2, Calendar } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import type { ExpenseData } from '@/pages/Index';
+import type { ExpenseData } from '@/types/expense';
 
 interface ExpensePreviewProps {
   expenseData: ExpenseData;

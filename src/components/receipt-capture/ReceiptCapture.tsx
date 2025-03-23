@@ -35,11 +35,8 @@ export const ReceiptCapture: React.FC<ReceiptCaptureProps> = ({ onCaptureComplet
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-[80vh] space-y-8">
-      <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold">Capture Receipt</h1>
-        <p className="text-muted-foreground">Align receipt within the frame</p>
-      </div>
+    <div className="flex flex-col items-center justify-center space-y-8 flex-1">
+      <p className="text-muted-foreground">Align receipt within the frame</p>
       
       {/* Capture area frame */}
       <div className="border-2 border-dashed border-gray-300 rounded-lg w-full aspect-[3/4] flex items-center justify-center">
